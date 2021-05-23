@@ -26,9 +26,19 @@ class ViewController: UIViewController {
         
         colorView.layer.cornerRadius = 20
         
+        redSlider.thumbTintColor = .systemGreen
+        redSlider.minimumValue = 0
+        redSlider.maximumValue = 1
+        
+        
+        
     }
 
     @IBAction func rgbSlider(_ sender: UISlider) {
+        redLabel.text = String(redSlider.value)
+        greenLabel.text = String(greenSlider.value)
+        blueLabel.text = String(blueSlider.value)
+        
     }
     
 }
